@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Title({title}) {
   return (
-    <p className='text-4xl font-bold'>{title}</p>
+    <p className='md:text-4xl font-bold'>{title}</p>
   )
 }

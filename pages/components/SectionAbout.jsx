@@ -4,10 +4,10 @@ import Title from './Title'
 
 export default function SectionAbout() {
   return (
-    <div className='py-28 px-48 grid grid-cols-2 gap-7 items-center justify-items-center justify-between'>
+    <div className='py-32 px-3 md:px-48 md:grid grid-cols-2 gap-7 items-center justify-items-center justify-between'>
       <div>
-        <div className='flex py-5'>
-           <p className='bg-gray-100 px-3 py-1 rounded-lg text-blue-400 font-semibold'>
+        <div className='md:flex py-5'>
+           <p className='bg-indigo-100 px-3 py-1 rounded-lg text-indigo-400 font-semibold'>
           A propros de moi
            </p>
         </div>
@@ -24,10 +24,10 @@ export default function SectionAbout() {
            </p>
         </div>
         <div>
-          <Link href="/"><a className="bg-blue-100 px-3 py-1 text-blue-400 rounded-lg font-semibold">Mon CV</a></Link>
+          <Link href="/"><a className="bg-indigo-100 px-3 py-1 text-indigo-400 rounded-lg font-semibold">Mon CV</a></Link>
         </div>
       </div>
-      <div className='w-96 '>
+      <div className='md:w-96 '>
         <img src="img/justine.jpg" alt="justine" />
       </div>
     </div>
