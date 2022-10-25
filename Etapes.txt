@@ -1,0 +1,22 @@
+1- install un new projet
+2- install tailwind
+3- developper son projet
+
+CONTENTFUL
+//////////
+1- inscription ou connection
+2- creation des content model (migration)
+3- rajoute quelques items à mon content model (un peu pour faire des fakedata)
+
+NEXTJS
+//////
+1- install contentful = npm i contentful 
+2- connexion a l'API contentful (dans contentful->settings->API keys->Add APIkeys)
+3- creer un fichier .env.local et verifier que dans gitignore que c'est bien ignorer pour le gitignore
+4- creer dans .env.local les variables d'environnement prefixer par NEXT_PUBLIC_
+5- coller les variables d'environnement récuperer dans contentful 
+6- dupliquer .env.local pour creer fichier .env-exemple pour envoyer l'exemple sur git (sans les keys bien sûr)
+
+description
+///////////
+Pour rich-text instal ->  npm install @contentful/rich-text-react-renderer
