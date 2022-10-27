@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import React from 'react'
-import CardProjet from './cards/CardProjet'
-import Title from './Title'
+import Link from "next/link";
+import React from "react"
+import CardProjet from "./cards/CardProjet"
+import Title from "./Title"
 
 export default function SectionProjet({projets}) {
   // console.log("projets:",projets);
