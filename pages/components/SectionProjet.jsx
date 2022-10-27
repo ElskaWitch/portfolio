@@ -17,7 +17,7 @@ export default function SectionProjet({projets}) {
         <p className='text-gray-400 font-semibold'>Voici quelques images illustratives des projets que j'ai pu réaliser.</p>
       </div>
       <div className='md:grid grid-cols-3 gap-7 py-10'>
-        {projets.map((projet)=>(
+        {projets && projets.map((projet)=>(
           <Link href={`projets/${projet.fields.slug}`} key={projet.sys.id}>
             <a>
               <CardProjet  projet={projet}/>
