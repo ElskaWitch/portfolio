@@ -10,7 +10,7 @@ import SectionWelcome from "./components/SectionWelcome";
 export default function Home({projets}) {
   // console.log(projets);
   return (
-    <Layout>
+    <Layout title="Acceuil" metaContent="Bienvenue dans mon portfolio. Je suis Justine.L développement web React et Laravel.">
       <SectionWelcome/>
       <SectionAbout/>
       <SectionSkill/>
@@ -30,7 +30,11 @@ export async function getStaticProps() {
   // console.log(client);
   
   // 2- recupere la data une fois que la promesse succes
-  const res = await client.getEntries({content_type: "projets"});
+  const res = await client.getEntries({
+    content_type: "projets",
+    limit: 8,
+    order: "sys.createdAt",
+  });
   // console.log("res:",res);
 
   // 3- on envoie la data dans le props de la page

@@ -47,9 +47,13 @@ export async function getStaticProps({params}) {
 
 export default function show({projet}) {
   // console.log("projets:", projet.fields);
-  const {title, description, roles, skills, urlDuProjet, images} = projet.fields;
+  const {title, description, roles, skills, urlDuProjet, images, featuredImage} = projet.fields;
   return (
-    <Layout>
+    <Layout  
+    title={title}
+    metaContent={`Le projet${title} est fait avec React Next.js et Contentful`}
+    image={`http:${featuredImage.fields.file.url}`}
+    >
       <div className='text-center grid justify-items-center py-20'>
         <div className='py-5'>
          <p className='md:text-3xl font-semibold text-indigo-400'>{title}</p>
@@ -83,7 +87,7 @@ export default function show({projet}) {
          <div className='md:grid grid-cols-2 gap-3 w-96'>
             {
              images.map((image,index) => (
-               <img key={index} src={image.fields.file.url} alt="titre projet" />
+               <img key={index} src={image.fields.file.url} alt={`Justine portfolio ${title}`}/>
             ))}
          </div>
         </div>
