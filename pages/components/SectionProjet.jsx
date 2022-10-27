@@ -8,7 +8,7 @@ export default function SectionProjet({projets}) {
   return (
      <div className="pb-28 px-3 md:px-48 grid justify-items-center ">
       <div className='flex py-5 '>
-        <p className='bg-indigo-100 px-3 py-1 rounded-lg text-indigo-400 font-semibold'>Mes réalisation</p>
+        <p className='bg-indigo-100 px-3 py-1 rounded-lg text-indigo-400 font-semibold'>Mes réalisations</p>
       </div>
       <div className='pb-10'>
       <Title title="Voyez par vous-même"/>
