@@ -92,7 +92,7 @@ export default function show({projet}) {
          </div>
         </div>
         <div className='pt-10'>
-         <a href={`/www.${urlDuProjet}`} target="_blank" className='border-2 border-indigo-500 p-2 mt-4 rounded-full' >Voir le projet</a>
+         <a href={`/www.${urlDuProjet}`} target="_blank" className='border-2 border-indigo-500 p-2 mt-4 rounded-full' rel="noreferrer">Voir le projet</a>
         </div>
       </div>
     </Layout>
