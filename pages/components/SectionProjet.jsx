@@ -20,7 +20,7 @@ export default function SectionProjet({projets}) {
         {projets && projets.map((projet)=>(
           <Link href={`projets/${projet.fields.slug}`} key={projet.sys.id}>
             <a>
-              <CardProjet  projet={projet}/>
+              <CardProjet  projet={projet} key={projet.sys.id}/>
             </a>
           </Link>
         ))}
