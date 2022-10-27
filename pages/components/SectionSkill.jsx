@@ -20,7 +20,7 @@ export default function SectionSkill() {
         <Card img="html.png" title="HTML"/>
         <Card img="Bootstrap_logo.svg.png" title="Bootstrap"/>
         <Card img="tailwind.png" title="Tailwind CSS"/>
-        <Card img="dsui.svg" title="DaisyUI"/>
+        <Card img="fleur.png" title="DaisyUI"/>
         <Card img="Figma-logo.svg" title="Figma"/>
         <Card img="github.png" title="GitHub"/>
         <Card img="mysql.png" title="MySQL"/>
